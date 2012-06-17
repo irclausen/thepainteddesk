@@ -1,0 +1,166 @@
+@import "bootstrap/bootstrap.less";
+
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+//@import "bootstrap/responsive.less";
+
+@import "font.less";
+/* ===== Primary Styles ========================================================
+   Author:
+   ========================================================================== */
+
+@contentWidth: 960px;
+@lightAccentColor: #DDDDCD;
+
+body {
+	background-image: url('/img/wood_1.png');
+}
+
+header {
+	background-color:@lightAccentColor;
+	width: @contentWidth;
+	margin: 0 auto;
+	height: 80px;
+	h1 {
+		font-family: 'AngelinaRegular', Arial, sans-serif;
+		font-size: 60px;
+		font-weight:600;
+		margin: 0px 0px 0px 20px;
+		line-height: 90px;
+		float:left;
+	}
+	p {
+		float:right;
+		font-size: 22px;
+		font-family:'AngelinaRegular', Arial, sans-serif;
+		margin-top: 50px;
+		margin-right:40px;
+	}
+}
+
+
+.main {
+	width: @contentWidth;
+	margin: 20px auto auto auto;
+	.mainNav {
+		ul {
+			list-style:none;
+			padding-left:0px;	
+			li {
+				display: inline;
+				color:@lightAccentColor;
+				font-weight:bold;
+				margin:0px 20px 0px 0px;
+			}
+		}
+	}
+	.thumbnails {
+		.clearfix;
+		height: 110px;
+		margin-left:0px;
+
+		.thumbnail {
+			width: 108px;
+			height: 108px;
+			border: solid 1px @lightAccentColor;
+			margin: 0 5px;
+			float: left;
+			padding:0px;
+
+			&.one {
+				background-image: url('/img/smallTable_thumb.png');
+			}
+			&.two {
+				background-image: url('/img/blueDresser_thumb.png');
+			}
+			&.three {
+				background-image: url('/img/grayDresser_thumb.png');
+			}
+			&.four {
+				background-image: url('/img/greenDresser_thumb.png');
+			}
+			&.five {
+				background-image: url('/img/blueTable_thumb.png');
+			}
+			&.six {
+				background-image: url('/img/blueLamp_thumb.png');
+			}
+			&.seven {
+				background-image: url('/img/grayTable_thumb.png');
+			}
+			&.eight {
+				background-image: url('/img/grayDesk_thumb.png');
+			}
+		}
+	}
+		
+	.showcase {
+		.clearfix;
+		margin: 50px 5px;
+		height: 500px;
+		.imageSelector {
+			width:110px;
+			height:500px;
+			float:left;
+			margin-right:10px;
+			padding-top:120px;
+			div {
+				width: 110;
+				margin: 0px auto;
+				color:@lightAccentColor;
+				font-family: 'AngelinaRegular', Arial, sans-serif;
+				font-size:48px;
+				line-height:52px;
+				text-align: center;
+				text-transform:uppercase;
+			}
+		}
+		.imageWrapper {
+			height: 500px;
+			width: 500px;
+			float:left;
+			//border: solid 1px @lightAccentColor;
+			background-color:#AEAEAE;
+			#primaryImage {
+				height: 500px;
+				width: 500px;
+				background-image: url('/img/smallTable.png');
+				&.one {
+					background-image: url('/img/smallTable.png');
+				}
+				&.two {
+					background-image: url('/img/blueDresser.png');
+				}
+				&.three {
+					background-image: url('/img/grayDresser.png');
+				}
+				&.four {
+					background-image: url('/img/greenDresser.png');
+				}
+				&.five {
+					background-image: url('/img/blueTable.png');
+				}
+				&.six {
+					background-image: url('/img/blueLamp.png');
+				}
+				&.seven {
+					background-image: url('/img/grayTable.png');
+				}
+				&.eight {
+					background-image: url('/img/grayDesk.png');
+				}
+			}
+		}
+		
+		.itemDetails {
+			color: @lightAccentColor;
+			float:left;
+			width:200px;
+			height:500px;
+			margin-left: 20px;
+		}
+	}
+}
