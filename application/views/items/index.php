@@ -3,5 +3,5 @@
 	<div class="itemDescription">
 		<?php echo $item['text'] ?>
 	</div>
-	<p><a href="items/view/<?php echo $item['slug'] ?>">View item</a></p>
+	<p><a href="/items/view/<?php echo $item['slug'] ?>">View item</a></p>
 <?php endforeach ?>

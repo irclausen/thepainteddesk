@@ -28,7 +28,10 @@ class Items_model extends CI_Model {
 		$data = array(
 				'title' => $this->input->post('title'),
 				'slug' => $slug,
-				'text' => $this->input->post('text')
+				'text' => $this->input->post('text'),
+				'width' => $this->input->post('width'),
+				'height' => $this->input->post('height'),
+				'depth' => $this->input->post('depth')
 				);
 
 		return $this->db->insert('items', $data);
